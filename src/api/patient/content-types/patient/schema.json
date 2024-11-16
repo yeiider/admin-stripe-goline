@@ -1,0 +1,52 @@
+{
+  "kind": "collectionType",
+  "collectionName": "patients",
+  "info": {
+    "singularName": "patient",
+    "pluralName": "patients",
+    "displayName": "patient",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string",
+      "required": true,
+      "maxLength": 30
+    },
+    "LastName": {
+      "type": "string",
+      "default": "last_name",
+      "required": true,
+      "maxLength": 30
+    },
+    "Birthdate": {
+      "type": "date",
+      "required": true
+    },
+    "Telephone": {
+      "type": "string",
+      "required": true
+    },
+    "Email": {
+      "type": "email",
+      "required": true
+    },
+    "DocumentType": {
+      "type": "enumeration",
+      "enum": [
+        "CC",
+        "TI",
+        "RC"
+      ],
+      "required": true
+    },
+    "DocumentNumber": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
